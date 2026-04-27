@@ -1,0 +1,8 @@
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep class * extends com.bumptech.glide.module.AppGlideModule { <init>(...); }
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** { **[] $VALUES; public *; }
+-keep class androidx.media3.** { *; }
+-keep interface androidx.media3.** { *; }
+-keep class com.github.chrisbanes.photoview.** { *; }
+-keep class com.statussaver.downloader.data.model.** { *; }
+-assumenosideeffects class android.util.Log { public static *** d(...); public static *** v(...); public static *** i(...); }

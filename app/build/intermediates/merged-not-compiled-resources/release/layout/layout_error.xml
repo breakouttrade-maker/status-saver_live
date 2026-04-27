@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="32dp">
+<TextView android:layout_width="80dp" android:layout_height="80dp" android:gravity="center" android:text="⚠️" android:textSize="40sp" android:layout_marginBottom="16dp"/>
+<TextView android:id="@+id/tvErrorMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="16sp" android:textColor="@color/error" android:gravity="center" android:layout_marginBottom="24dp"/>
+<com.google.android.material.button.MaterialButton android:id="@+id/btnRetry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:gravity="center"
+    android:padding="32dp" android:background="@color/surface">
+
+    <TextView android:layout_width="100dp" android:layout_height="100dp"
+        android:background="@drawable/bg_permission_icon" android:gravity="center"
+        android:text="📁" android:textSize="40sp" android:layout_marginBottom="24dp"/>
+
+    <TextView android:id="@+id/tvPermissionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/permission_title" android:textSize="22sp" android:textStyle="bold"
+        android:textColor="@color/text_primary" android:layout_marginBottom="16dp"/>
+
+    <TextView android:id="@+id/tvPermissionMessage" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="@string/permission_message" android:textSize="16sp" android:textColor="@color/text_secondary"
+        android:gravity="center" android:lineSpacingExtra="4dp" android:layout_marginBottom="8dp"/>
+
+    <TextView android:id="@+id/tvPermissionHint" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="" android:textSize="14sp" android:textColor="@color/error"
+        android:gravity="center" android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGrantPermission" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/grant_permission" android:textAllCaps="false"
+        android:backgroundTint="@color/primary" android:textColor="@android:color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpenSettings" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/open_settings" android:textAllCaps="false"
+        style="Widget.Material3.Button.OutlinedButton" android:layout_marginTop="12dp"/>
+</LinearLayout>

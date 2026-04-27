@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.breakout.statussaver.app-mergeReleaseResources-52:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/ec2-user/.gradle/caches/transforms-3/1e4561120994cc95ebe9d08da0f70a60/transformed/appcompat-1.7.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
