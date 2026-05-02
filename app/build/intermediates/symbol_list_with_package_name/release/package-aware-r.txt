@@ -3289,6 +3289,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_reward
 drawable ic_save
 drawable ic_search_black_24
 drawable ic_settings
@@ -3371,6 +3372,7 @@ drawable notify_panel_notification_icon_bg
 drawable offline_dialog_background
 drawable offline_dialog_default_icon_42dp
 drawable test_level_drawable
+drawable toolbar_logo
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font roboto_medium_numbers

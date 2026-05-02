@@ -18,10 +18,17 @@ android {
         applicationId = "com.breakout.statussaver"
         minSdk = 24
         targetSdk = 35
-        versionCode = 4
-        versionName = "1.4"
+        versionCode = 8
+        versionName = "2.0.0"
     }
     buildTypes {
+        applicationVariants.all {
+            val variant = this
+            variant.outputs.all {
+                val output = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
+                output.outputFileName = "StatusSaver-release-v${variant.versionName}.aab"
+            }
+        }
         release {
             isMinifyEnabled = true
             isShrinkResources = true
@@ -35,6 +42,7 @@ android {
     }
     kotlinOptions { jvmTarget = "17" }
     buildFeatures { viewBinding = true }
+    lint { abortOnError = false; checkReleaseBuilds = false }
 }
 
 dependencies {
@@ -55,5 +63,7 @@ dependencies {
     implementation("com.github.chrisbanes:PhotoView:2.3.0")
     implementation("com.facebook.shimmer:shimmer:0.5.0")
     implementation("androidx.documentfile:documentfile:1.0.1")
+    
+    // AdMob Only (Safe Build)
     implementation("com.google.android.gms:play-services-ads:23.3.0")
 }

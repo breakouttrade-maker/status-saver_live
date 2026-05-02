@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Status Saver images &amp; videos</string>
+    <string name="app_name">Status Saver</string>
     <string name="open_whatsapp">Open WhatsApp</string>
     <string name="tab_images">Images</string>
     <string name="tab_videos">Videos</string>

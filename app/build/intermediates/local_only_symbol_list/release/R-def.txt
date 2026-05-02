@@ -18,11 +18,13 @@ drawable bg_permission_icon
 drawable ic_back
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_reward
 drawable ic_save
 drawable ic_settings
 drawable ic_share
 drawable ic_video_play
 drawable ic_whatsapp
+drawable toolbar_logo
 id action_change_folder
 id action_delete
 id action_refresh

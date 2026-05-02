@@ -228,13 +228,11 @@ ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:26:17-7
 	android:name
 		ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:26:27-74
 activity#com.breakout.statussaver.ui.preview.PreviewActivity
-ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:30:9-188
-	android:screenOrientation
-		ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:30:87-123
+ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:30:9-151
 	android:exported
 		ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:30:62-86
 	android:configChanges
-		ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:30:124-185
+		ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:30:87-148
 	android:name
 		ADDED from /home/ec2-user/Q/StatusSaver/app/src/main/AndroidManifest.xml:30:19-61
 activity#com.breakout.statussaver.ui.settings.SettingsActivity

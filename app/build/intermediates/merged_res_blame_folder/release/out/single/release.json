@@ -2200,6 +2200,10 @@
         "source": "com.breakout.statussaver.app-material-1.12.0-40:/color/m3_switch_thumb_tint.xml"
     },
     {
+        "merged": "com.breakout.statussaver.app-merged_res-55:/drawable_ic_reward.xml.flat",
+        "source": "com.breakout.statussaver.app-main-56:/drawable/ic_reward.xml"
+    },
+    {
         "merged": "com.breakout.statussaver.app-merged_res-55:/layout_abc_action_menu_layout.xml.flat",
         "source": "com.breakout.statussaver.app-appcompat-1.7.0-2:/layout/abc_action_menu_layout.xml"
     },
@@ -3764,6 +3768,10 @@
         "source": "com.breakout.statussaver.app-material-1.12.0-40:/color/material_personalized_color_secondary_text.xml"
     },
     {
+        "merged": "com.breakout.statussaver.app-merged_res-55:/drawable_toolbar_logo.png.flat",
+        "source": "com.breakout.statussaver.app-main-56:/drawable/toolbar_logo.png"
+    },
+    {
         "merged": "com.breakout.statussaver.app-merged_res-55:/drawable_abc_ic_menu_share_mtrl_alpha.xml.flat",
         "source": "com.breakout.statussaver.app-appcompat-1.7.0-2:/drawable/abc_ic_menu_share_mtrl_alpha.xml"
     },
@@ -4076,16 +4084,16 @@
         "source": "com.breakout.statussaver.app-material-1.12.0-40:/color/m3_navigation_bar_item_with_indicator_label_tint.xml"
     },
     {
-        "merged": "com.breakout.statussaver.app-merged_res-55:/drawable-hdpi-v4_exo_icon_vr.png.flat",
-        "source": "com.breakout.statussaver.app-media3-ui-1.4.1-24:/drawable-hdpi-v4/exo_icon_vr.png"
+        "merged": "com.breakout.statussaver.app-merged_res-55:/drawable-xxxhdpi-v4_exo_ic_subtitle_off.png.flat",
+        "source": "com.breakout.statussaver.app-media3-ui-1.4.1-24:/drawable-xxxhdpi-v4/exo_ic_subtitle_off.png"
     },
     {
         "merged": "com.breakout.statussaver.app-merged_res-55:/layout_abc_popup_menu_item_layout.xml.flat",
         "source": "com.breakout.statussaver.app-appcompat-1.7.0-2:/layout/abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "com.breakout.statussaver.app-merged_res-55:/drawable-xxxhdpi-v4_exo_ic_subtitle_off.png.flat",
-        "source": "com.breakout.statussaver.app-media3-ui-1.4.1-24:/drawable-xxxhdpi-v4/exo_ic_subtitle_off.png"
+        "merged": "com.breakout.statussaver.app-merged_res-55:/drawable-hdpi-v4_exo_icon_vr.png.flat",
+        "source": "com.breakout.statussaver.app-media3-ui-1.4.1-24:/drawable-hdpi-v4/exo_icon_vr.png"
     },
     {
         "merged": "com.breakout.statussaver.app-merged_res-55:/color_mtrl_filled_icon_tint.xml.flat",

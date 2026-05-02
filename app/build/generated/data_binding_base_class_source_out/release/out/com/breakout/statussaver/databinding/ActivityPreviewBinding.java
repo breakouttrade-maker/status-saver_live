@@ -13,6 +13,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.breakout.statussaver.R;
 import com.github.chrisbanes.photoview.PhotoView;
+import com.google.android.gms.ads.AdView;
 import com.google.android.material.appbar.MaterialToolbar;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -21,6 +22,9 @@ import java.lang.String;
 public final class ActivityPreviewBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final AdView adView;
 
   @NonNull
   public final PhotoView ivPhotoView;
@@ -34,10 +38,11 @@ public final class ActivityPreviewBinding implements ViewBinding {
   @NonNull
   public final MaterialToolbar toolbar;
 
-  private ActivityPreviewBinding(@NonNull LinearLayout rootView, @NonNull PhotoView ivPhotoView,
-      @NonNull PlayerView playerView, @NonNull ProgressBar progressBar,
-      @NonNull MaterialToolbar toolbar) {
+  private ActivityPreviewBinding(@NonNull LinearLayout rootView, @NonNull AdView adView,
+      @NonNull PhotoView ivPhotoView, @NonNull PlayerView playerView,
+      @NonNull ProgressBar progressBar, @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
+    this.adView = adView;
     this.ivPhotoView = ivPhotoView;
     this.playerView = playerView;
     this.progressBar = progressBar;
@@ -71,6 +76,12 @@ public final class ActivityPreviewBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.adView;
+      AdView adView = ViewBindings.findChildViewById(rootView, id);
+      if (adView == null) {
+        break missingId;
+      }
+
       id = R.id.ivPhotoView;
       PhotoView ivPhotoView = ViewBindings.findChildViewById(rootView, id);
       if (ivPhotoView == null) {
@@ -95,7 +106,7 @@ public final class ActivityPreviewBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPreviewBinding((LinearLayout) rootView, ivPhotoView, playerView,
+      return new ActivityPreviewBinding((LinearLayout) rootView, adView, ivPhotoView, playerView,
           progressBar, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);

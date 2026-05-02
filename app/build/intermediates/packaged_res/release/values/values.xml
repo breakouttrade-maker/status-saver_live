@@ -13,7 +13,7 @@
     <dimen name="card_corner">8dp</dimen>
     <dimen name="grid_padding">2dp</dimen>
     <dimen name="toolbar_height">56dp</dimen>
-    <string name="app_name">Status Saver images &amp; videos</string>
+    <string name="app_name">Status Saver</string>
     <string name="grant_permission">Grant Permission</string>
     <string name="no_images_found">No image statuses found</string>
     <string name="no_saved_statuses">No saved statuses yet</string>

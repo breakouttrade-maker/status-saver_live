@@ -1,8 +1,12 @@
--keep public class * implements com.bumptech.glide.module.GlideModule
--keep class * extends com.bumptech.glide.module.AppGlideModule { <init>(...); }
--keep public enum com.bumptech.glide.load.ImageHeaderParser$** { **[] $VALUES; public *; }
--keep class androidx.media3.** { *; }
--keep interface androidx.media3.** { *; }
--keep class com.github.chrisbanes.photoview.** { *; }
--keep class com.statussaver.downloader.data.model.** { *; }
--assumenosideeffects class android.util.Log { public static *** d(...); public static *** v(...); public static *** i(...); }
+# KEEP ALL GOOGLE PLAY SERVICES (Fixes Blank Banners in Release)
+-keep class com.google.android.gms.** { *; }
+-keep interface com.google.android.gms.** { *; }
+-keep class com.google.ads.** { *; }
+-keep interface com.google.ads.** { *; }
+-dontwarn com.google.android.gms.**
+-dontwarn com.google.ads.**
+-keepclassmembers class com.google.android.gms.ads.** { *; }
+-keepclassmembers class com.google.ads.mediation.** { *; }
+-keep public class com.google.android.gms.ads.AdView
+-keep public class com.google.android.gms.ads.AdRequest
+-keepattributes *Annotation*

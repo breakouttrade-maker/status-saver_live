@@ -1,23 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:orientation="vertical" android:background="@android:color/black">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/transparent" app:titleTextColor="@android:color/white"
-        app:navigationIcon="@drawable/ic_back" app:menu="@menu/menu_preview"/>
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:menu="@menu/menu_preview" />
 
-    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
         <com.github.chrisbanes.photoview.PhotoView
-            android:id="@+id/ivPhotoView" android:layout_width="match_parent" android:layout_height="match_parent"
-            android:visibility="gone"/>
+            android:id="@+id/ivPhotoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
         <androidx.media3.ui.PlayerView
-            android:id="@+id/playerView" android:layout_width="match_parent" android:layout_height="match_parent"
-            android:visibility="gone"/>
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
         <ProgressBar
-            android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:layout_gravity="center" android:visibility="gone"/>
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
     </FrameLayout>
+
+    <!-- STANDARD XML BANNER -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1607968585289432/8779090448" />
+
 </LinearLayout>
